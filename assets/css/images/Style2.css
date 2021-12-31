@@ -1,0 +1,82 @@
+body {
+  font-family: sans-serif;
+  background-image: linear-gradient(
+    rgb(249, 252, 252),
+    rgb(177, 219, 243),
+    rgb(101, 183, 231),
+    rgb(8, 150, 238)
+  );
+}
+header {
+  text-align: center;
+
+  border-bottom: solid black;
+  border-radius: 10px;
+}
+
+#profile {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+h1 {
+  font-size: 40px;
+  font-family: Luminari, fantasy;
+  /* text-align: center; */
+}
+.navbar {
+  display: flex;
+  align-items: center;
+}
+.navbar li {
+  display: inline-block;
+  font-size: 25px;
+  font-family: Palatino, URW Palladio L, serif;
+  padding: 20px;
+  font-weight: bold;
+}
+h2,
+h3,
+h4,
+h5 {
+  font-size: 25px;
+  font-family: Palatino, URW Palladio L, serif;
+}
+.aboutme img {
+  height: 150px;
+  width: 150px;
+}
+.aboutme img,
+.aboutme p {
+  display: inline-block;
+}
+.aboutme p {
+  font-size: 17px;
+}
+.aboutme {
+  /* border-right: solid black; */
+  border-bottom: solid black;
+  border-radius: 10px;
+  height: 25%;
+  width: 45%;
+}
+.skill,
+.aboutme {
+  display: inline-block;
+}
+.Skill {
+  justify-content: center;
+  width: 30%;
+}
+.skill li {
+  display: inline-block;
+  justify-content: space-between;
+  border: solid;
+  margin: 5px;
+}
+.work li,
+.work img {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+}

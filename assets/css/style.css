@@ -52,38 +52,53 @@ body {
 .intro {
   width: 100vw;
   height: 90vh;
-  border-bottom: solid rgb(99, 13, 99) 2px;
+  border-bottom: solid rgb(54, 52, 54) 2px;
   display: inline-flex;
   align-items: center;
   justify-content: space-around;
 }
 .skill {
-  height: 70vh;
+  height: auto;
   width: 100vw;
   flex-basis: inherit;
   text-align: center;
-  border-bottom: solid 2px darkmagenta;
+  border-bottom: solid 2px rgb(54, 52, 54);
+  display: inline-flex;
+  flex-wrap: wrap;
+  padding: 25px;
 }
 .work {
-  height: 70vh;
+  height: auto;
   width: 100vw;
   flex-basis: inherit;
   text-align: center;
+  display: flex;
+  border-bottom: solid 2px rgb(54, 52, 54);
 }
+
+
 #skilllist li {
-  padding: 40px;
-  margin: 40px;
+  padding: 20px;
+  margin: 25px;
   display: inline-flex;
+  width: 12vw;
 
   justify-content: center;
-  border: rgb(148, 18, 120) solid 2px;
+  border: rgb(54, 52, 54) solid 2px;
+  box-shadow: 2px 2px gray;
 }
+
+#skilllist li:hover {
+  font-size: large;
+}
+
+
 #site li {
   padding: 20px;
   margin: 30px;
   display: inline-flex;
-  justify-content: center;
-  border: rgb(134, 29, 120) solid 2px;
+  /* justify-content: center; */
+  border: rgb(54, 52, 54) solid 2px;
 }
 #contact {
   justify-content: center;
@@ -111,34 +126,59 @@ body {
   height: 200px;
   width: 200px;
 }
+
+#contact {
+ display:flex;
+ display: grid;
+
+}
 #contact a {
   text-decoration: none;
+
+}
+#contact {
+  
 }
 footer ul {
   display: flex;
   justify-content: center;
+  justify-content: space-evenly;
 }
-#contact h3 {
+#contact h3,h4,h5 {
   text-align-last: center;
+  
 }
+h4, h3{
+  padding: 10px;
+  font-size: 30px;
+  justify-content: center;
+}
+
+
 @media screen and (max-width: 576px) {
-  body {
+  /* body {
     display: flex;
     flex-wrap: wrap;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-  }
+  } */
   .intro {
     flex-wrap: wrap;
   }
 }
 @media screen and (max-width: 576px) {
   .skill {
-    flex-wrap: wrap;
+    display: inline-flex;
   }
   .site,
   #contact {
     inline-size: wrap;
   }
 }
+@media screen and (max-width: 576px){
+  .work{
+    display: inline-flex;
+  }
+}
+
